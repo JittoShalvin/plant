@@ -1,0 +1,153 @@
+/* NavBar.css */
+.navbar {
+  background: linear-gradient(90deg, #2c7744 0%, #3a9f5d 100%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.nav-brand a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.brand-icon {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+
+.brand-name {
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.admin-link {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.admin-link:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.2s ease;
+}
+
+.toggle-icon::before {
+  top: -8px;
+}
+
+.toggle-icon::after {
+  top: 8px;
+}
+
+.toggle-icon.open {
+  background-color: transparent;
+}
+
+.toggle-icon.open::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.toggle-icon.open::after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: linear-gradient(90deg, #2c7744 0%, #3a9f5d 100%);
+    padding: 1rem;
+    gap: 1rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}

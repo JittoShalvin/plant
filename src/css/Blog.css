@@ -1,0 +1,238 @@
+/* Add these styles to your Blog.css file */
+
+.admin-login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .admin-login-container h2 {
+    margin-bottom: 1.5rem;
+    color: #2c7744;
+    text-align: center;
+  }
+  
+  .admin-login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .admin-login-container input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .admin-login-container button {
+    padding: 0.75rem;
+    background-color: #3a9f5d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .admin-login-container button:hover {
+    background-color: #2c7744;
+  }
+  
+  .blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .admin-controls {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .create-post-btn, .logout-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .create-post-btn {
+    background-color: #3a9f5d;
+    color: white;
+    border: none;
+  }
+  
+  .create-post-btn:hover {
+    background-color: #2c7744;
+  }
+  
+  .logout-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .logout-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .post-form {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .post-form input[type="text"],
+  .post-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .post-form textarea {
+    min-height: 200px;
+    resize: vertical;
+  }
+  
+  .post-form button {
+    padding: 0.75rem;
+    background-color: #3a9f5d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    align-self: flex-start;
+  }
+  
+  .post-form button:hover {
+    background-color: #2c7744;
+  }
+  
+  .image-preview {
+    margin: 1rem 0;
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .post-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .post-content-wrapper {
+    padding: 1.5rem;
+  }
+  
+  .post-meta {
+    color: #666;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .post-content {
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .delete-btn {
+    background-color: #fff0f0;
+    color: #d32f2f;
+    border: 1px solid #ffcdd2;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ffebee;
+  }
+  
+  .no-posts {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+    font-size: 1.2rem;
+  }
+  
+  .error-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 2rem;
+    background-color: #fff3f3;
+    border-left: 4px solid #d32f2f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  .error-container h2 {
+    color: #d32f2f;
+    margin-bottom: 1rem;
+  }
+  
+  .error-container button {
+    padding: 0.5rem 1rem;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .error-container button:hover {
+    background-color: #d32f2f;
+  }
