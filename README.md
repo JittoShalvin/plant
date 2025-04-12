@@ -10,10 +10,10 @@ A web-based application for detecting plant diseases using two powerful machine 
 ![Welcome Page](/images/welcome.png)
 
 ### 🔸 Plant Disease Detection using CNN
-![CNN Page](/images/plant2.png)
+![CNN Page](/images/plant1.png)
 
 ### 🔸 Plant Disease Prediction using Random Forest
-![Random Forest Page](/images/plant1.png)
+![Random Forest Page](/images/plant2.png)
 
 ---
 
