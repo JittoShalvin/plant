@@ -7,13 +7,13 @@ A web-based application for detecting plant diseases using two powerful machine 
 ## 🖼️ Screenshots
 
 ### 🔸 Welcome Page
-![Welcome Page](/images/Screenshot%202025-04-10%20211212.png)
+![Welcome Page](/images/welcome.png)
 
 ### 🔸 Plant Disease Detection using CNN
-![CNN Page](/images/Screenshot%202025-04-10%20224441.png)
+![CNN Page](/images/plant2.png)
 
 ### 🔸 Plant Disease Prediction using Random Forest
-![Random Forest Page](/images/Screenshot%202025-04-10%20225337.png)
+![Random Forest Page](/images/plant1.png)
 
 ---
 
