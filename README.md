@@ -4,7 +4,7 @@ A web-based application for detecting plant diseases using two powerful machine 
 
 ---
 ##Download the CNN model (.h5 file)
-(https://drive.google.com/drive/folders/1h3eWU1kGGsjbvvp4OMW7pGdaI_ufHzdm?usp=sharing)
+https://drive.google.com/drive/folders/1h3eWU1kGGsjbvvp4OMW7pGdaI_ufHzdm?usp=sharing
 ---
 ## 🖼️ Screenshots
 
