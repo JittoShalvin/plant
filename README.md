@@ -3,7 +3,9 @@
 A web-based application for detecting plant diseases using two powerful machine learning techniques: **Convolutional Neural Networks (CNN)** and **Random Forest**. This system helps users upload plant leaf images and identify possible diseases through AI-driven predictions.
 
 ---
-
+##Download the CNN model (.h5 file)
+(https://drive.google.com/drive/folders/1h3eWU1kGGsjbvvp4OMW7pGdaI_ufHzdm?usp=sharing)
+---
 ## 🖼️ Screenshots
 
 ### 🔸 Welcome Page
