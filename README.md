@@ -45,11 +45,24 @@ A web-based application for detecting plant diseases using two powerful machine 
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript (or React)
-- **Backend:** Python (Flask or Django)
+- **Frontend:** React
+- **Backend:** Python (Flask)
 - **ML Frameworks:** TensorFlow/Keras for CNN, Scikit-learn for Random Forest
 
 ---
 
-## 📁 Project Structure
+## ▶️ Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/JittoShalvin/plant.git
+# To Run the React frontend
+    npm install
+    npm start
+# For CNN-based predictions
+    python app.py
+
+# For Random Forest-based predictions
+     python app1.py
+
 
