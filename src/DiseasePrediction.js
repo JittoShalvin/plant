@@ -22,7 +22,7 @@ const DiseasePrediction = () => {
 
     try {
       // Use the new combined endpoint
-      const response = await fetch('http://127.0.0.1:8054/predict_by_location', {
+      const response = await fetch('https://plant-8vox.onrender.com/predict_by_location', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
